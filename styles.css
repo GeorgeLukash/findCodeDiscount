@@ -1,0 +1,60 @@
+/* -------Tag selector------- */
+pre{
+    border: 1px solid rgba(0,0,0,0.7);
+    border-radius: 5px;
+    font: 28px;
+    font-family: broadway;
+}
+/* -------Tag selector------- */
+
+/* -------ID selector------- */
+#some-container{
+    background-color: rgba(0,0,0,0.5);
+}
+#some-container > h1{
+    color:white;
+}
+
+#some-container h1+h2{
+    color:red;
+}
+
+#some-container h2~h3{
+    color:rgba(0,0,255,0.7);
+}
+/* -------ID selector------- */
+
+/* -------Class selector------- */
+.list-container{
+    background-color: aqua;
+    list-style-type: none;
+}
+.list-container li{
+    padding: 5px 10px;
+}
+.list-container > li:nth-child(2n){
+    background-color: coral;
+    
+}
+/* -------Class selector------- */
+
+/* -------Attribute selector------- */
+input[type="text"]{
+    padding: 5px;
+    color: red;
+}
+input[type="text"]:hover{
+    padding: 5px;
+    color: green;
+}
+input[type="text"]:active{
+    padding: 50px;
+    color: green;
+}
+[type="button"]{
+    background-color: rgba(0,255,0,0.8);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color:white;
+}
+/* -------Attribute selector------- */
